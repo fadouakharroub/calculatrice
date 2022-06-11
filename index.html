@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Calculatrice</title>
+    <script src="calcule.js" defer></script>
+</head>
+<body class="bg-info">
+    <div class="card bg-dark p-4 w-50 mt-5 m-auto">
+        <div class="row gap-1" style="height: 400px; ">
+            <div style="height: 60px;" class="col-full btn btn-light border border-1 fs-2 text-end" ><span id="showLastNumber" ></span><span id="showOperation" ></span></div>
+            <button class="col-md-3 btn btn-danger"    onclick="reset()">Del</button>
+            <button class="col-md-3 btn btn-secondary" onclick="back()">&larr;</button>
+            <button class="col-md btn btn-warning"     onclick="getOperation('/')">/</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(1)">1</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(2)">2</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(3)">3</button>
+            <button class="col-md btn btn-warning"     onclick="getOperation('*')">x</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(4)">4</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(5)">5</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(6)">6</button>
+            <button class="col-md btn btn-warning"     onclick="getOperation('-')">-</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(7)">7</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(8)">8</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(9)">9</button>
+            <button class="col-md btn btn-warning"     onclick="getOperation('+')">+</button>
+            <button class="col-md-3 btn btn-secondary" onclick="dot()">.</button>
+            <button class="col-md-3 btn btn-secondary" onclick="getNumber(0)">0</button>
+            <button class="col-md btn btn-success"     onclick="getResult()">=</button>
+        </div>
+    </div>
+
+</body>
+</html>
